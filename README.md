@@ -7,8 +7,8 @@ docker build -t receipt-processing-nestjs .
 ```
 
 ### Run the Docker Container
+Bind port 3000 inside the container to port 3000 on the local machine
 ```bash
-# bind port 3000 inside the container to port 3000 on the local machine
 docker run -p 3000:3000 receipt-processing-nestjs
 ```
 
@@ -21,9 +21,8 @@ npm run start:dev
 ```
 
 ### Run tests locally
-
+Unit tests
 ```bash
-# unit tests
 npm run test
 ```
 
